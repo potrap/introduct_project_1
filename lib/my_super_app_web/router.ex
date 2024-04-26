@@ -18,6 +18,14 @@ defmodule MySuperAppWeb.Router do
     pipe_through :browser
 
     live("/", HomeLive)
+    live("/menu",MenuLive)
+    live("/tab", TabLive)
+    live("/acc", AccordionLive)
+    live("/form", Form)
+    live("users",UsersPage)
+    get "/hello", HelloController, :hello
+
+
   end
 
   # Other scopes may use custom stacks.
